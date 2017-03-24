@@ -1,4 +1,4 @@
-from deviantart_image_downloader import DeviantArtImageDownloader
+from downloaders.deviantart_image_downloader import DeviantArtImageDownloader
 
 """
 sample.py

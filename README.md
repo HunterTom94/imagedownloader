@@ -8,6 +8,19 @@ images for use in machine learning training data. Because of this, the libraries
 may be a little "overfitted" for our needs, but maybe they will help you, too!
 
 
+Some Details
+------------
+imagedownloader has two pecuilar behaviors that are worth noting.
+
+1. imagedownloader downloads all images as ".jpg" files. This shortcut was out
+   of pure laziness. In theory, the extension can be extracted from the URL of
+   the image [Tracked in Issue #1](https://github.com/brandonio21/imagedownloader/issues/1)
+
+2. imagedownloader attempts to keep track of the images it has downloaded on a
+   past run, and uses the image's URL to do a preliminary duplicate-check. Thus,
+   when images are saved, they are saved with a filename of their hashed URL.
+
+
 Using A Downloader
 ------------------
 To dive right into the code, be sure to look at `sample.py`. Otherwise, here is

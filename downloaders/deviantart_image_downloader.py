@@ -1,4 +1,4 @@
-from image_downloader import ImageDownloader, Image
+from downloaders.image_downloader import ImageDownloader, Image
 import logging
 import re
 import urllib.request
