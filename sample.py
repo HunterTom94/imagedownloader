@@ -1,6 +1,4 @@
 from deviantart_image_downloader import DeviantArtImageDownloader
-import logging
-logger = logging.getLogger()
 
 
 def main():
@@ -12,6 +10,7 @@ def main():
     downloader = DeviantArtImageDownloader(
         directory, pool_size, queries, download_per_query
     )
+
     downloader.load_directory()
     downloader.gather_urls()
     downloader.wait_for_downloads_to_complete()
